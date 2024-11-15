@@ -39,4 +39,11 @@ public class Test_Kaprekar {
         // Prueba con el número 3524 (llega a 6174 en 3 iteraciones)
         Assertions.assertEquals(3, kaprekar.itKaprekar(3524));
     }
+
+    @Test
+    public void testIterationsToKaprekarConstant2() {
+        Kaprekar kaprekar = new Kaprekar();  // Instanciamos el objeto de la clase Kaprekar
+        // Prueba con el número 5200 (llega a 6174 en 7 iteraciones)
+        Assertions.assertEquals(7, kaprekar.itKaprekar(5200));
+    }
 }
