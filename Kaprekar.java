@@ -11,7 +11,7 @@ public class Kaprekar {
      * @param number Número de 4 dígitos a procesar.
      * @return Resultado de la operación de Kaprekar.
      */
-    public int kaprekarOp(int number) {
+    public static int kaprekarOp(int number) {
         // Convertir a string y asegurar que tenga 4 dígitos (rellenar con ceros si es necesario)
         String numStr = String.format("%04d", number);
 
@@ -35,7 +35,7 @@ public class Kaprekar {
      * @param number Número de 4 dígitos a procesar.
      * @return Número de iteraciones hasta llegar a la constante 6174.
      */
-    public int itKaprekar(int number) {
+    public static int itKaprekar(int number) {
         int count = 0;
 
         // Asegurarse de que el número tenga 4 dígitos y no sea un número con todos los dígitos iguales (como 1111)
