@@ -37,12 +37,14 @@ public class Kaprekar {
      */
     public int itKaprekar(int number) {
         int count = 0;
+
         // Asegurarse de que el número tenga 4 dígitos y no sea un número con todos los dígitos iguales (como 1111)
         if (number == 0 || number == 1111 || number == 2222 || number == 3333 || number == 4444 || number == 5555 ||
                 number == 6666 || number == 7777 || number == 8888 || number == 9999) {
             return 0;
         }
 
+        // Continuar realizando la operación de Kaprekar hasta llegar a 6174
         while (number != 6174) {
             number = kaprekarOp(number);
             count++;
